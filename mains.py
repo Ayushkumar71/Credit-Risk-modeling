@@ -10,7 +10,7 @@ import xgboost as xgb
 
 
 
-df = pd.read_excel ("C:\\Users\\rohu1\\Desktop\\depv1\\EPS_Dataset.xlsx",'v8')
+df = pd.read_excel ("./EPS_Dataset.xlsx",'v8')
 df = df. drop( ['Bank name', 'Year'] , axis=1)
 
 
@@ -190,7 +190,7 @@ for colsample_bytree in param_grid['colsample_bytree']:
        
 
 answers_grid_df = pd.DataFrame(answers_grid)
-answers_grid_df .to_excel ('C:\\Users\\rohu1\\Desktop\\9K.xlsx', index=False)
+answers_grid_df .to_excel ("9K.xlsx", index=False)
 
 
 # Getting best results with these-
